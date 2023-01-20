@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Summary {% endblock %}</h1>
+    {% for message in messages %}
+        <div class='Summary'>
+            <p>{{ message['content'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

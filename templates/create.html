@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Paste Article text here: {% endblock %}</h1>
+    <form method="post">
+        <label for="article">Article</label>
+        <br>
+        <textarea name="article"
+                  placeholder="article content"
+                  rows="15"
+                  cols="60"
+                  >{{ request.form['article'] }}</textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
