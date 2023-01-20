@@ -4,7 +4,7 @@ from flask import request
 from flask import url_for, flash, redirect
 import ai21
 
-ai21.api_key = "WPdqS4g8dDE8DluGB8rKxk1UVYEuAfwR"
+ai21.api_key = ""
 
 app = Flask(__name__)
 
